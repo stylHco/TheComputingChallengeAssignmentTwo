@@ -1,0 +1,55 @@
+.Imgdiv img{
+    width: 100%;
+    height: auto;
+}
+
+.newdiv{
+
+    border: 1px solid var(--secondary-color);
+    background-image: repeating-linear-gradient(to right, white,#c7cbda);
+    margin-bottom: 20px;
+
+}
+
+.productsdiv {
+
+    padding: 2%;
+
+}
+
+.productsdiv .title{
+
+    color: #f2be1a;
+
+}
+.productsdiv .price {
+
+    font-weight: bold;
+
+}
+
+.productsdiv button {
+    margin: 5px auto;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    font-size: var(--button-font);
+    padding: 0 10px;
+    background: linear-gradient(45deg, white 30%, #c7cbda 10%);
+    color: #919cad;
+
+
+}
+
+#item {
+
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    margin: auto;
+    height: auto;
+
+
+}
+
+

@@ -1,0 +1,119 @@
+
+
+.Imgdiv img{
+    width: 100%;
+}
+
+.newdiv{
+    border: 1px solid var(--secondary-color);
+    background:linear-gradient(to left, #c7cbda, white);
+}
+
+.productsdiv {
+
+    padding: 2%;
+
+}
+
+.productsdiv .title{
+
+    color: #f2be1a;
+
+}
+.productsdiv .price {
+
+    font-weight: bold;
+
+}
+
+.productsdiv button {
+    margin: 5px auto;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    font-size: var(--button-font);
+    padding: 0 10px;
+    background: linear-gradient(45deg, white 30%, #c7cbda 10%);
+    color: #919cad;
+
+}
+
+#products-menu{
+    margin: auto;
+    padding: 0;
+    justify-items: center;
+
+}
+
+
+.gridDisplay {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(16rem,1fr));
+    grid-gap: 15px;
+
+}
+
+.listDisplay{
+
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+
+}
+
+
+.listDisplay img{
+    width: 100%;
+    /*height: 100%;*/
+}
+
+
+.listDisplay>*{
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 10px;
+    width: auto;
+    height: auto;
+    max-height: 200px;
+
+}
+
+
+
+
+.productsUL, .layoutButtons{
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.description:hover {
+    color: var(--hyperlink-color);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 650px){
+    :root{
+        --button-font: 15px;
+    }
+
+
+}
+@media only screen and (max-width: 350px){
+
+    :root{
+        --button-font: 10px;
+    }
+
+
+
+
+}
