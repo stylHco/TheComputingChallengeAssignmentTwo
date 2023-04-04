@@ -126,7 +126,7 @@ var SessionArr = JSON.parse(sessionStorage.SessionItem);
 
 
 
-//create ne div with class name newdiv
+//create new div with class name newdiv
 var newdiv = document.createElement("div");
 newdiv.setAttribute("class", "newdiv");
 
@@ -192,3 +192,9 @@ function checkForDuplicates(key, arrayElement) {
 }
 
 
+
+function GoBack(){
+
+    history.back();
+
+}

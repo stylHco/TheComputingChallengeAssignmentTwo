@@ -1,4 +1,11 @@
 
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
 
 .Imgdiv img{
     width: 100%;
@@ -62,26 +69,26 @@
 
 }
 
+.listDisplay .Imgdiv{
+    max-width: 200px;
+}
 
 .listDisplay img{
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-
+    width: 100%;
+    height: 100%;
 }
 
 
 .listDisplay>*{
     display: flex;
     flex-direction: row;
-
-    margin-bottom: 10px;
-    width: auto;
-    height: auto;
+    margin: 10px auto;
+    max-width: 800px;
     max-height: 200px;
 
-}
+    width: 100%;
 
+}
 
 
 
@@ -102,20 +109,168 @@
 
 
 
-@media only screen and (max-width: 650px){
-    :root{
-        --button-font: 15px;
+@media only screen and (max-width: 550px){
+
+    body{
+
+        font-size: 1.3rem;
     }
 
+
+    .listDisplay .Imgdiv{
+        max-width: 150px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    body{
+
+        font-size: 1rem;
+    }
 
 }
-@media only screen and (max-width: 350px){
 
-    :root{
-        --button-font: 10px;
+
+
+
+
+
+
+.glow {
+    font-size: 70px;
+    color: #ffffff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000,
+        0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
     }
+    to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+        0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+
+/*list and grid icon*/
+
+.layoutButtons>*+*{
+    margin-left: 10px;
+}
+
+.layoutButtons>*{
+    padding:5px;
+    display: flex;
+    align-items: center;
+}
 
 
 
 
+
+.listViewButton {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    /*transform: scale(var(--ggs,1));*/
+    width: 26px;
+    height: 26px;
+    border: 2px solid;
+    border-radius: 3px;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+
+
+.listViewButton::after,
+.listViewButton::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: currentColor;
+    top: 6px;
+    left: 3px;
+    box-shadow:
+            0 4px 0,
+            0 8px 0
+}
+.listViewButton::after {
+    border-radius: 3px;
+    width: 12px;
+    left: 7px
+}
+
+
+
+
+
+
+
+
+
+.gridViewButton {
+    display: inline-block;
+    margin: 2vw;
+}
+
+
+.gridViewButton > .layer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+
+.grid-icon--line2 {
+    position: relative;
+    width: 26px;
+    height: 26px;
+}
+
+.grid-icon--line2 > .layer {
+    height: 12px;
+}
+
+.grid-icon--line2 > .layer--primary {
+    top: 0;
+}
+
+.grid-icon--line2 > .layer--secondary {
+    bottom: 0;
+}
+
+.grid-icon--line2 > .layer > span {
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 100%;
+    box-sizing: border-box;
+    border: solid 2px #333;
+}
+
+.grid-icon--line2 > .layer > span:first-child {
+    left: 0;
+}
+
+.grid-icon--line2 > .layer > span:nth-child(2) {
+    right: 0;
+}
+
+
+
+.listViewButton:hover{
+    color: orange;
+}
+
+
+.gridViewButton:hover > span > span, .gridViewButton:hover{
+    border-color: orange;
 }

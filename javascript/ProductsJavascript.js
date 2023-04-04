@@ -242,8 +242,11 @@ function checkForDuplicates(key, counter) {
 
 
 function  ChangeToGrid(){
+
     itemsBlock.classList.add("gridDisplay");
     itemsBlock.classList.remove("listDisplay");
+    document.getElementById("gridViewButton").style.background = "darkorange";
+    document.getElementById("listViewButton").style.background = null;
 
 }
 
@@ -252,5 +255,13 @@ function ChangeToList(){
 
     itemsBlock.classList.remove("gridDisplay");
     itemsBlock.classList.add("listDisplay");
+    document.getElementById("listViewButton").style.background = "darkorange";
+    document.getElementById("gridViewButton").style.background = null;
+
+
 }
+
+
+
+
 

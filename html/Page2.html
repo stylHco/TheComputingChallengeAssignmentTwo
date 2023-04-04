@@ -25,7 +25,7 @@
             <img class="UClanLogo" src="../Resources/images/UclanLogoImage/logo2.png"
                  alt="this is the logo of the UClan!!">
         </div>
-        <div class="logo">Student Shop</div>
+        <div class="logo glow">Student Shop</div>
     </div>
     <div class="hamburger">
         <div class="line"></div>
@@ -63,8 +63,20 @@
     <br>
 
     <div class="layoutButtons">
-        <button class="gridViewButton" onclick="ChangeToGrid()">Grid</button>
-        <button class="listViewButton" onclick="ChangeToList()">List</button>
+        <button class="gridViewButton grid-icon--line2" id="gridViewButton" onclick="ChangeToGrid()">
+		<span class="layer layer--primary">
+			<span></span><span></span>
+		</span>
+                <span class="layer layer--secondary">
+			<span></span><span></span>
+		</span>
+        </button>
+        <button class="listViewButton" id="listViewButton" onclick="ChangeToList()">
+            <span class="listIcon"></span>
+            <span class="listIcon"></span>
+            <span class="listIcon"></span>
+
+        </button>
     </div>
 
     <br>
